@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/build/
+RewriteRule static/(.*) /build/static/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !^(/static/|/build/|/api/|/images/)
+RewriteRule (.*) /build/ [R=301,L]

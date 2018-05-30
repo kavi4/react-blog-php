@@ -1,0 +1,17 @@
+.category-list{
+	background-color: white;
+	padding: 1em;
+}
+
+.category-list a:last-child{
+	border:none;
+}
+
+.category-list__title{
+	text-transform: uppercase;
+	color:#444444;
+	font-size: 1em;
+	padding-bottom: 1em; 
+	margin: 1em 0 0 0 ;
+	border-bottom: 1px solid #EEEEEE;
+}

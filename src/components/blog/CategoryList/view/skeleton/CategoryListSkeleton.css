@@ -1,0 +1,12 @@
+.category-skeleton-list{
+	background-color: white;
+	padding: 1em;
+}
+
+.category-skeleton-list__title{
+	text-transform: uppercase;
+	height: 2em;
+	width:10em;
+	background-color: #f8f8f8;
+	padding-bottom: 1em; 
+}

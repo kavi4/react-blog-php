@@ -1,0 +1,21 @@
+.routed-pagination{
+	margin:1em 2em;
+}
+
+.routed-pagination__link{
+	text-decoration: none;
+	float: left;
+	color: white;
+	padding: 1em;
+	display: inline-block;
+	background-color: #343434;
+	margin-right: 0.5em;
+}
+
+.routed-pagination__link_active, .routed-pagination__link:hover{
+	background-color: #2ecc71;
+}
+
+.routed-pagination__link-disable{
+	cursor: default;
+}

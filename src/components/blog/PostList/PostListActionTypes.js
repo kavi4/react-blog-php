@@ -1,0 +1,2 @@
+export const LOADED  = "BLOG_POST_LIST_LOADED";
+export const LOADING = "BLOG_POST_LIST_LOADING";

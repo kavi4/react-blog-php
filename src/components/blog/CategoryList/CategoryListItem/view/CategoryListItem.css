@@ -1,0 +1,11 @@
+.category-list__item{
+	display: block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #444444;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.category-list__item:hover{
+	color: #2ecc71;
+}

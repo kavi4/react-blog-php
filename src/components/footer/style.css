@@ -1,0 +1,14 @@
+.footer{
+	background-color: #343434;
+	padding: 1em 1em;
+	margin: 2em 0 ;
+}
+
+.footer__copyright{
+	float: left;
+	color:white;
+}
+
+.footer__logo{
+	float: right;
+}

@@ -1,0 +1,28 @@
+.header{
+	background-color: #343434;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.header__logo{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:1em;
+}
+
+.header__navigation{
+	float: right;
+}
+
+.header__navigation-link{
+	color:white;
+	display: inline-block;
+	padding: 1.5em 2em;
+	text-decoration: none;
+}
+
+
+
+.header__navigation-link:hover , .header__navigation-link_active{
+	background-color: #2ecc71;
+}

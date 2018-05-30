@@ -1,0 +1,59 @@
+.post-preview{
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+.post-preview__header{
+	padding: 1em 2em;
+}
+
+.post-preview__avatar{
+	float: left;
+	border-radius:50%;
+	width:70px;
+	height:70px;
+}
+
+.post-preview__title{
+	color:#444444;
+	font-size: 30px;
+	line-height: 1.5em;
+	display: inline-block;
+	margin:0;
+}
+
+.post-preview__info-list{
+	margin:0;
+	padding: 0;
+}
+
+.post-preview__info-item{
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.post-preview__category-link{
+	text-decoration: none;
+	color:#444444;
+}
+
+.post-preview__category-link:hover{
+	color: #2ecc71;
+}
+.post-preview__image img{
+	width:100%;
+}
+
+.post-preview__content{
+	padding: 2em 4em;
+}
+
+.post-preview__more-btn{
+	color:white;
+	padding: 0.5em 1.5em;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #2ecc71;
+	float:right;
+}

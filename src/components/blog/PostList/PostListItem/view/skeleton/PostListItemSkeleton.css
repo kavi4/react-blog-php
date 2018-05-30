@@ -1,0 +1,66 @@
+.post-preview-skeleton{
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+.post-preview-skeleton__header{
+	padding: 1em 1em 2em 1em;
+}
+
+.post-preview-skeleton__avatar{
+	float: left;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #f8f8f8;
+	margin-right: 1em;
+}
+
+.post-preview-skeleton__title{
+	height: 2em;
+	width: 20em;
+	display: inline-block;
+	background-color: #f8f8f8;
+}
+
+.post-preview-skeleton__info-list{
+	margin: 0;
+	padding: 0;
+}
+
+.post-preview-skeleton__info-item{
+	height: 1em;
+	width: 10em;
+	display: inline-block;
+	margin-right: 10px;
+	background-color: #f8f8f8;
+}
+
+.post-preview-skeleton__image{
+	width: 100%;
+	background-color: #f8f8f8;
+	height: 350px;
+}
+
+.post-preview-skeleton__content{
+	padding: 2em 4em;
+}
+
+.post-preview-skeleton__content-item{
+	background-color: #f8f8f8;
+	height: 1em;
+	margin-bottom: 0.5em;
+}
+
+.post-preview-skeleton__content-item:last-child{
+	width: 30%;
+}
+
+.post-preview-skeleton__more-btn{
+	margin: 0.5em 1.5em;
+	height: 2em;
+	width: 10em;
+	display: inline-block;
+	background-color: #f8f8f8;
+	float: right;
+}

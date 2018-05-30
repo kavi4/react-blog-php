@@ -1,0 +1,9 @@
+.login-form-wrapper{
+	display: inline-block;
+}
+.login-form-position{
+	display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
+    height: 100vh;
+}
