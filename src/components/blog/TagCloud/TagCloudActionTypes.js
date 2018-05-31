@@ -1,0 +1,2 @@
+export const LOADED  = "BLOG_TAGCLOUD_LOADED";
+export const LOADING = "BLOG_TAGCLOUD_LOADING";

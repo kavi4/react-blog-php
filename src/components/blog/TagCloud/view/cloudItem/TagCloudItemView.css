@@ -1,0 +1,15 @@
+.tag-cloud__item{
+	display: inline-block;
+	float: left;
+	margin-right: 0.5em;
+	background-color: #f8f8f8;
+	color:#444444;
+	text-decoration: none;
+	padding: 0.5em;
+	font-size: 0.8em;
+}
+
+.tag-cloud__item:hover{
+	background-color: #2ecc71;
+	color:white;
+}

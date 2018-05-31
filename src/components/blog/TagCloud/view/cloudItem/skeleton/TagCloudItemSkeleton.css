@@ -1,0 +1,11 @@
+.tag-cloud-skeleton__item{
+	display: inline-block;
+	border-radius: 0.2em;
+	float: left;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+	background-color: #f8f8f8;
+	padding: 0.5em;
+	height: 0.8em;
+	width:3em;
+}

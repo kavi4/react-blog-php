@@ -1,0 +1,12 @@
+.tag-cloud-skeleton {
+	background-color:white;
+	padding: 1em;
+}
+
+.tag-cloud-skeleton__title{
+	margin-bottom: 1em;
+	height: 2em;
+	width: 10em;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #EEEEEE;
+}

@@ -1,0 +1,13 @@
+.tag-cloud{
+	background-color:white;
+	padding: 1em; 
+}
+
+.tag-cloud__title{
+	padding-bottom: 1em;
+	border-bottom: 1px solid #EEEEEE;
+	font-size: 1em;
+	text-transform:uppercase;
+	color: #444444;
+
+}

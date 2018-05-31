@@ -1,6 +1,6 @@
 
 const GetCloud = ({action})=>{
-
+/*
 	fetch('/api/tag/getCloud.php', {  
     method: 'POST',
     credentials: 'same-origin',
@@ -11,7 +11,11 @@ const GetCloud = ({action})=>{
   	})  
   	.catch(function (error) {  
     console.log('Request failed', error); 
-  	});
+  	});*/
+
+    setTimeout(()=>{
+      action({tags:[{id:1,title:"new"},{id:2,title:"update"}],errors:[]});
+    },1000);
 
 }
 
