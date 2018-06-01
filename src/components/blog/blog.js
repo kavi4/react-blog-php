@@ -1,4 +1,4 @@
-import './blog.css';
+import './Blog.css';
 import React           from 'react';
 import {Route ,Switch} from 'react-router-dom';
 import PostList        from './PostList';

@@ -3,7 +3,7 @@ import React            from 'react';
 import shortid          from 'shortid';
 import Skeleton         from './skeleton';
 import PropTypes        from 'prop-types';
-import PostListItem     from '../PostListItem';
+import PostListItem     from './PostListItem';
 import RoutedPagination from '../../RoutedPagination';
 
 

@@ -1,7 +1,7 @@
 import React   from 'react';
 import shortid from 'shortid';
 import './CategoryListSkeleton.css';
-import CategoryListItemSkeleton from '../../CategoryListItem/view/skeleton';
+import CategoryListItemSkeleton from '../CategoryListItem/skeleton';
 
 
 const CategoryListSkeleton = ()=>{

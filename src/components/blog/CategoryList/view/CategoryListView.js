@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import shortid   from 'shortid';
 import Skeleton  from './skeleton';
-import CategoryListItem from '../CategoryListItem';
+import CategoryListItem from './CategoryListItem';
 
 import './CategoryListView.css';
 
@@ -12,7 +12,7 @@ const CategoryList = ({categoryes,conf})=>{
 	if(categoryes[0]){
 
 		let list = categoryes.map((category)=>{
-			return <CategoryListItem key = {shortid.generate()} id = {category.id} title = {category.title} conf = {conf}/>
+			return <CategoryListItem key = {shortid.generate()} {...category} conf = {conf}/>
 		});
 
 		return(

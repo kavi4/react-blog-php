@@ -1,0 +1,12 @@
+.latest-post-list{
+	padding: 1em;
+	background-color: white;
+}
+
+.latest-post-list__title{
+	border-bottom:1px solid #EEEEEE;
+	font-size: 1em;
+	padding-bottom: 1em; 
+	color:#444444;
+	text-transform: uppercase;
+}

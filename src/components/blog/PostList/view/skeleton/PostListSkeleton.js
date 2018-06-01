@@ -2,7 +2,7 @@ import './PostListSkeleton.css';
 
 import shortid          from 'shortid';
 import React        from 'react';
-import ItemSkeleton from '../../PostListItem/view/skeleton';
+import ItemSkeleton from '../PostListItem/skeleton';
 
 const PostListSkeleton = ({pageSize})=>{
 	let list = new Array(pageSize).fill(pageSize);

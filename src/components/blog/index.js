@@ -1,2 +1,2 @@
-import Blog from './blog';
+import Blog from './Blog';
 export default Blog;

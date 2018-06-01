@@ -1,0 +1,32 @@
+.post-promo-skeleton-item{
+	padding-bottom: 1em;
+}
+
+.post-promo-skeleton__avatar{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	float: left;
+	border-radius: 50%;
+	background-color: #f8f8f8;
+}
+
+.post-promo-skeleton-info{
+	float: left;
+	display: inline-block;
+	margin-left: 1em;
+}
+
+.post-promo-skeleton__title{
+	height: 1em;
+	width:7em;
+	margin-bottom: 0.5em; 
+	background-color: #f8f8f8;
+
+}
+
+.post-promo-skeleton__date{
+	height: 1em;
+	width:7em;
+	background-color: #f8f8f8;
+}

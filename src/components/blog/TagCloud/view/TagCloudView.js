@@ -11,7 +11,7 @@ const TagCloudView = ({tags,loading,conf})=>{
 	if(tags[0] && !loading){
 
 		let list = tags.map((tag)=>{
-			return <TagCloudItem key = {shortid.generate()} id = {tag.id} title = {tag.title} conf = {conf}/>
+			return <TagCloudItem key = {shortid.generate()} {...tag} conf = {conf}/>
 		});
 
 		return(

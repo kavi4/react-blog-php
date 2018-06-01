@@ -1,0 +1,10 @@
+.latest-post-list-skeleton{
+	padding: 1em;
+	background-color: white;
+}
+
+.latest-post-list-skeleton__title{
+	height: 1.5em;
+	margin-bottom: 1em; 
+	background-color: #f8f8f8;
+}
