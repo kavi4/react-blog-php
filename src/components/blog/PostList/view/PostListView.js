@@ -7,7 +7,7 @@ import PostListItem     from './PostListItem';
 import RoutedPagination from '../../RoutedPagination';
 
 
-const PostListView = ({titleText,posts = [],pagination,loading,conf})=>{
+const PostListView = ({posts = [],pagination,loading,conf,titleText})=>{
 
 	if(posts[0] && !loading){
 

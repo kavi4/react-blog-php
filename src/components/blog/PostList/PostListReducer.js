@@ -10,18 +10,18 @@ const PostListReducer = (state = {posts :[],errors:[],loading:false,pagination:{
 				errors     : action.errors,
 				loading    : action.loading,
 				pagination : action.pagination,
-				thisPage   : action.pagination.currentPage,
+				thisPage   : state.loadingPage,
 			};
 			return newState;
 		}
 
 		case types.LOADING:{
 			let newState = {
-				posts      : [],
-				errors     : [],
-				loading    : action.loading,
-				pagination : {},
-				thisPage   : state.page,
+				posts       : [],
+				errors      : [],
+				loading     : action.loading,
+				pagination  : {},
+				loadingPage : action.loadingPage,
 
 			}
 			return newState;

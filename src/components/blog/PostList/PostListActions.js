@@ -10,9 +10,10 @@ export const loaded = (response)=>{
 	}
 }
 
-export const loading = ()=>{
+export const loading = (newPage)=>{
 	return {
-		type    : types.LOADING,
-		loading : true,
+		type        : types.LOADING,
+		loading     : true,
+		loadingPage : newPage,
 	}
 }

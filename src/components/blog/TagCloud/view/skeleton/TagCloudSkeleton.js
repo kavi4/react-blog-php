@@ -1,7 +1,7 @@
 import './TagCloudSkeleton.css';
 import React                from 'react';
 import shortid              from "shortid";
-import TagCloudItemSkeleton from '../cloudItem/skeleton';
+import TagCloudItemSkeleton from '../TagCloudItem/skeleton';
 
 const TagCloudSkeleton = ()=>{
 	let list = new Array(8).fill(8);

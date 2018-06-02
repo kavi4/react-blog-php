@@ -7,11 +7,19 @@ import {withRouter} from 'react-router-dom';
 
 const PostList = ({posts,pagination,Load,match,loading = true,thisPage,conf})=>{
 
-  let newPage = match.params.page || 1;
- if((thisPage != newPage) && !loading){Load();}
+let newPage = match.url;
+if((thisPage != newPage) && !loading){Load(newPage);}
 
-  return (
-      <PostListView loading = {loading} posts = {posts} pagination = {pagination} conf = {conf} />
+let titleText = "";
+let params    = match.params;
+
+if(posts[0]){
+  if(params.tag){titleText      = "Tag : "      + posts[0].tag_title; pagination.linkPattern      = conf.BASE_PATH + "/posts/tag/" + posts[0].tag_id + "/page/:page";}
+  if(params.category){titleText = "Category : " + posts[0].category_title; pagination.linkPattern = conf.BASE_PATH + "/posts/category/" + posts[0].category_id + "/page/:page"}
+}
+
+return (
+      <PostListView loading = {loading} posts = {posts} pagination = {pagination} conf = {conf} titleText = {titleText}/>
     );
 }
 
@@ -23,7 +31,7 @@ let pagination = postList.pagination ? postList.pagination : {};
 pagination.pageSize      = conf.POSTS_PAGE_SIZE;
 pagination.leftNumPages  = conf.POSTS_LEFT_NUM_PAGES;
 pagination.rightNumPages = conf.POSTS_RIGHT_NUM_PAGES;
-pagination.linkPattern   = conf.BASE_PATH + "/page/:page";
+pagination.linkPattern   = conf.BASE_PATH + "/posts/page/:page";
 
   return  {	
   			posts      : postList.posts,
@@ -36,12 +44,12 @@ pagination.linkPattern   = conf.BASE_PATH + "/page/:page";
 }
 
 const mapDispatchToProps = (dispatch,props) => {
-  let page = +props.match.params.page || 1;
-  let Api  = props.api;
+  let params = props.match.params;
+  let ApiMethod = props.api;
   return {
-  	Load : () => {
-      dispatch(actions.loading());
-      Api.getPage({page:page,pageSize:props.conf.POSTS_PAGE_SIZE,action:(response)=>{dispatch(actions.loaded(response));} })
+  	Load : (newPage) => {
+      dispatch(actions.loading(newPage));
+      ApiMethod({params:params,pageSize:props.conf.POSTS_PAGE_SIZE,action:(response)=>{dispatch(actions.loaded(response));} })
     },
   };
 }

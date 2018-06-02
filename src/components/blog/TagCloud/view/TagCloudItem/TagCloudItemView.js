@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const TagCloudItemView = ({id,title,conf})=>{
 	if(title){
 		return(
-			<NavLink className = "tag-cloud__item" to = {conf.BASE_PATH+"/tag/" + id}>{title}</NavLink>
+			<NavLink className = "tag-cloud__item" to = {conf.BASE_PATH+"/posts/tag/" + id}>{title}</NavLink>
 		);
 	}else{
 		return false;

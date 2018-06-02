@@ -19,7 +19,7 @@ const LatestPostListItemView = ({image,id,title,created,conf})=>{
 
 LatestPostListItemView.propTypes = {
 	    image   : PropTypes.string,
-	    title   : PropTypes.number.isRequired,
+	    title   : PropTypes.string.isRequired,
 	    created : PropTypes.string.isRequired,
 }
 

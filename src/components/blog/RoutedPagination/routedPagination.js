@@ -26,7 +26,7 @@ const RoutedPagination = ({pagination})=>{
 	if(!total||!currentPage||!linkPattern){return false;}
 
 	const getLink=(page)=>{
-		return <NavLink to = {linkPattern.replace(':page',page)} className="routed-pagination__link" activeClassName = "routed-pagination__link_active" key={shortid.generate()}>{page}</NavLink>
+		return <NavLink to = {linkPattern.replace(':page',page)} className="routed-pagination__link" activeClassName = "routed-pagination__link_active" key = {shortid.generate()}>{page}</NavLink>
 	};
 
 	const getEmptyLink=(text)=>{

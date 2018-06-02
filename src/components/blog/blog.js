@@ -7,9 +7,13 @@ const Blog = ({api,conf})=>{
 
 	return (
 			<Switch>
-				<Route path = {conf.BASE_PATH+"/page/:page"} render = {()=><PostList api = {api.post} conf = {conf}/>}/>
-				<Route path = {conf.BASE_PATH} render = {()=><PostList  api = {api.post} conf = {conf}/>}/>
-				<Route path = "/"              render = {()=><PostList  api = {api.post} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts/category/:category/page/:page"} render = {()=><PostList api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts/tag/:tag/page/:page"} render = {()=><PostList api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts/category/:category"} render = {()=><PostList api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts/tag/:tag"} render = {()=><PostList api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts/page/:page"} render = {()=><PostList api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = {conf.BASE_PATH+"/posts"} render = {()=><PostList  api = {api.post.getPage} conf = {conf}/>}/>
+				<Route path = "/"              render = {()=><PostList  api = {api.post.getPage} conf = {conf}/>}/>
 			</Switch>
 	);
 }

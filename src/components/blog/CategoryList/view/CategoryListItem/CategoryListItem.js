@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const CategoryListItem = ({id,title,conf})=>{
 	if(title){
 		return(
-			<NavLink className="category-list__item" to = {conf.BASE_PATH+"/category/" + id}>{title}</NavLink>
+			<NavLink className="category-list__item" to = {conf.BASE_PATH+"/posts/category/" + id}>{title}</NavLink>
 		);
 	}else{
 		return false;

@@ -43,7 +43,7 @@ PostPreview.propTypes = {
 	    image           :PropTypes.string,
 	    content_preview :PropTypes.string,
 	    created         :PropTypes.string,
-	    category_id     :PropTypes.string,
+	    category_id     :PropTypes.number,
   	}),
   	basePath : PropTypes.string.isRequired,
 }

@@ -3,7 +3,7 @@ import {NavLink}    from 'react-router-dom';
 import PropTypes    from 'prop-types';
 import shortid      from 'shortid';
 import Skeleton     from './skeleton';
-import TagCloudItem from './cloudItem';
+import TagCloudItem from './TagCloudItem';
 import './TagCloudView.css';
 
 const TagCloudView = ({tags,loading,conf})=>{
@@ -30,7 +30,7 @@ const TagCloudView = ({tags,loading,conf})=>{
 
 TagCloudView.propTypes = {
 	tags   		 : PropTypes.array,
-	loading      : PropTypes.func.isRequired,
+	loading      : PropTypes.bool.isRequired,
 }
 
 export default TagCloudView;
